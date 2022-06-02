@@ -1,3 +1,13 @@
-<main class="w-full h-full">
-    <app-header></app-header>
+<main class="relative flex flex-wrap w-full h-full bg-portfolio-blue-alpha-400">
+    <div class="absolute -z-10 top-0 left-0 w-full h-full overflow-hidden bg-portfolio-blue-alpha-400">
+        <div class="w-full h-full bg-gradient-to-r from-portfolio-blue-dark via-portfolio-blue-alpha-400 to-portfolio-blue-dark">
+        </div>
+        <img class="absolute w-full -top-48 -z-20" src="/assets/images/pexels-kevin-ku-577585.jpg" alt="" srcset="">
+    </div>
+    <header class="w-full h-14">
+        <app-header></app-header>
+    </header>
+    <section class="w-1/2 h-[calc(100%-3.5rem)] pl-10 mt-5">
+        <app-presentation></app-presentation>
+    </section>
 </main>

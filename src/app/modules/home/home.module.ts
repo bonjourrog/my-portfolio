@@ -4,13 +4,15 @@ import { HomeComponent } from './home.component';
 import { RouterModule } from '@angular/router';
 import { HomeRoutes } from './home.routes';
 import { HeaderComponent } from './header/header.component';
+import { PresentationComponent } from './presentation/presentation.component';
 
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    PresentationComponent
   ],
   imports: [
     CommonModule,
