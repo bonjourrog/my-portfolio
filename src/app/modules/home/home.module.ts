@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { HomeRoutes } from './home.routes';
 import { HeaderComponent } from './header/header.component';
 import { PresentationComponent } from './presentation/presentation.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 
 
@@ -12,7 +13,8 @@ import { PresentationComponent } from './presentation/presentation.component';
   declarations: [
     HomeComponent,
     HeaderComponent,
-    PresentationComponent
+    PresentationComponent,
+    ExperienceComponent
   ],
   imports: [
     CommonModule,
