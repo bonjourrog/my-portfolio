@@ -8,6 +8,7 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { PictureComponent } from './picture/picture.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 
@@ -18,7 +19,8 @@ import { TechnologiesComponent } from './technologies/technologies.component';
     PresentationComponent,
     ExperienceComponent,
     PictureComponent,
-    TechnologiesComponent
+    TechnologiesComponent,
+    ProjectsComponent
   ],
   imports: [
     CommonModule,
