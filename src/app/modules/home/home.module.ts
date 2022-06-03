@@ -6,6 +6,7 @@ import { HomeRoutes } from './home.routes';
 import { HeaderComponent } from './header/header.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { PictureComponent } from './picture/picture.component';
 
 
 
@@ -14,7 +15,8 @@ import { ExperienceComponent } from './experience/experience.component';
     HomeComponent,
     HeaderComponent,
     PresentationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    PictureComponent
   ],
   imports: [
     CommonModule,
