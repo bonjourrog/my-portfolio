@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { PictureComponent } from './picture/picture.component';
+import { TechnologiesComponent } from './technologies/technologies.component';
 
 
 
@@ -16,7 +17,8 @@ import { PictureComponent } from './picture/picture.component';
     HeaderComponent,
     PresentationComponent,
     ExperienceComponent,
-    PictureComponent
+    PictureComponent,
+    TechnologiesComponent
   ],
   imports: [
     CommonModule,
