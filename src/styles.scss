@@ -3,9 +3,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .social-network-link{
+        @apply transition duration-200 ease-in-out text-2xl cursor-pointer rounded-full hover:bg-emerald-300 p-2 hover:text-white
+    }
+
+    .project-card-container{
+        @apply transition duration-200 ease-in-out relative flex items-end justify-center w-48 h-14 bg-green-300 rounded-sm cursor-pointer mt-20 hover:bg-white
+    }
+
+    .project-card-header{
+        @apply transition duration-200 ease-in-out absolute -top-7 flex items-end justify-center w-11/12 h-full bg-white rounded-sm shadow-md shadow-emerald-700 group-hover:bg-white
+    }
+
+    .project-card-icon-container{
+        @apply transition duration-200 ease-in-out absolute -top-6 flex items-center justify-center w-11 h-11 rounded-full border-4 border-emerald-500 bg-white shadow-md shadow-emerald-700 group-hover:border-white group-hover:bg-emerald-300
+    }
+
+    .project-card-icon{
+        @apply transition duration-200 ease-in-out text-emerald-300 text-xl group-hover:text-white
+    }
+
+    .project-card-title{
+        @apply transition duration-200 ease-in-out flex items-end justify-center w-full h-full text-center text-gray-700 font-bold group-hover:bg-emerald-300 group-hover:text-gray-600
+    }
+
+    .project-card-description{
+        @apply py-1 text-gray-700 text-sm
+    }
+}
+
 body{
     max-width: 100vw;
     width: 100%;
-    height: 100vh;
     color: white;
+
+    background: url("/assets/images/pexels-kevin-ku-577585.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
 }
