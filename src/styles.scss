@@ -9,7 +9,7 @@
     }
 
     .project-card-container{
-        @apply transition duration-200 ease-in-out relative flex items-end justify-center w-48 h-14 bg-green-300 rounded-sm cursor-pointer mt-20 hover:bg-white
+        @apply transition duration-200 ease-in-out relative flex items-end justify-center w-48 h-14 bg-green-300 rounded-sm cursor-pointer mt-20 lg:mx-0 mx-2 hover:bg-white 
     }
 
     .project-card-header{
