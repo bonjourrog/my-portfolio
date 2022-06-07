@@ -10,9 +10,6 @@ export class PresentationComponent implements OnInit {
   @Input("name") name!:string;
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.description);
-    
-  }
+  ngOnInit(): void {}
 
 }

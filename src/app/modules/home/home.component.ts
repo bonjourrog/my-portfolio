@@ -20,7 +20,6 @@ export class HomeComponent implements OnInit {
       if(response){
         this.userInfo = response;
         this.description = this.userInfo.description;
-        console.log(this.userInfo);
       }
     })
   }
