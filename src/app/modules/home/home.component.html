@@ -4,17 +4,17 @@
         <app-header></app-header>
     </header>
     <section class="sm:w-1/2 w-full h-[calc(100%-7.75rem)] pl-10 mt-5">
-        <app-presentation></app-presentation>
+        <app-presentation [description]="description" [name]="userInfo.name"></app-presentation>
     </section>
     <section class="relative sm:flex hidden flex-col items-center w-1/2 h-[calc(100%-7.75rem)]">
             <div class="w-3/4 lg:w-full">
-                <app-picture></app-picture>
+                <app-picture [image]="userInfo.image"></app-picture>
             </div>
             <div class="absolute z-30 lg:bottom-8 bottom-24 w-1/2 py-3">
                 <div class="w-1/2 mx-auto flex justify-evenly">
-                    <i class="fa-brands fa-github social-network-link"></i>
-                    <i class="fa-brands fa-linkedin social-network-link"></i>
-                    <i class="fa-brands fa-twitter social-network-link"></i>
+                    <ng-container *ngFor="let socialNetwork of userInfo.social_networks">
+                        <i class="{{socialNetwork.icon}} social-network-link"></i>
+                    </ng-container>
                 </div>
             </div>
     </section>
@@ -26,10 +26,10 @@
     </section>
     <section class="flex flex-wrap w-full mt-20">
         <div class="flex items-start justify-center lg:w-1/2 w-full">
-            <app-experience></app-experience>
+            <app-experience [experience]="userInfo.experience"></app-experience>
         </div>
-        <div class="w-full lg:w-1/2 md:w-3/4 mx-auto lg:p-0 sm:px-16 p-0 mt-10 lg:m-0">
-            <app-projects></app-projects>
+        <div class="w-full lg:w-portfolio-30 md:w-3/4 mx-auto lg:p-0 sm:px-16 p-0 mt-10 lg:m-0">
+            <app-projects [projects]="userInfo.projects"></app-projects>
         </div>
     </section>
 </main>

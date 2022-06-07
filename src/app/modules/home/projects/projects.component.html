@@ -1,47 +1,14 @@
 <div class="flex flex-wrap justify-around items-center w-full h-full">
     <p class="block w-full text-3xl text-center font-extrabold text-emerald-300">Projects</p>
-
-    <div class="md:w-1/2 w-full flex flex-wrap justify-around items-center ">
+    <ng-container *ngFor="let project of projects">
         <div class="group project-card-container">
             <div class="project-card-header">
                 <div class="project-card-icon-container">
-                    <i class="fa-solid fa-boxes-stacked project-card-icon"></i>
+                    <i class="{{project.icon}} project-card-icon"></i>
                 </div>
-                <span class="project-card-title">Solinsa Website</span>
+                <span class="project-card-title">{{project.project_name}}</span>
             </div>
-            <span class="project-card-description">Triple i soluciones</span>
+            <span class="project-card-description">{{project.company_name}}</span>
         </div>
-    
-        <div class="group project-card-container">
-            <div class="project-card-header">
-                <div class="project-card-icon-container">
-                    <i class="fa-regular fa-calendar-check project-card-icon"></i>
-                </div>
-                <span class="project-card-title">Fluxy app</span>
-            </div>
-            <span class="project-card-description">Triple i soluciones</span>
-        </div>
-    </div>
-
-    <div class="md:w-1/2 w-full flex flex-wrap justify-around items-center ">
-        <div class="group project-card-container">
-            <div class="project-card-header">
-                <div class="project-card-icon-container">
-                    <i class="fa-solid fa-image project-card-icon"></i>
-                </div>
-                <span class="project-card-title">Web portfolio</span>
-            </div>
-            <span class="project-card-description">School project</span>
-        </div>
-    
-        <div class="group project-card-container">
-            <div class="project-card-header">
-                <div class="project-card-icon-container">
-                    <i class="fa-solid fa-chart-column project-card-icon"></i>
-                </div>
-                <span class="project-card-title">Report system</span>
-            </div>
-            <span class="project-card-description">School project</span>
-        </div>
-    </div>
+    </ng-container>
 </div>

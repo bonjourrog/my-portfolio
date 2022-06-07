@@ -2,7 +2,7 @@ import { UserInfo } from "../models/userInfo";
 
 
 export const UserInfoMock: UserInfo = {
-    name: "Rogelio",
+    name: "Rogelio Beltrán",
     description: [
         {
             name:"Work both front-end and back-end technologies focus on web development",
@@ -34,10 +34,10 @@ export const UserInfoMock: UserInfo = {
     ],
     experience:[
         {
-            company_name: "Triiple i soluciones",
-            occupation_name: "web developer",
+            company_name: "Triple i soluciones",
             time_worked: 9,
-            years_or_moths: "months"
+            years_or_moths: "months",
+            date: "AUG 2021 - MAY 2021"
         }
     ],
     projects:[
@@ -52,7 +52,7 @@ export const UserInfoMock: UserInfo = {
             icon:"fa-regular fa-calendar-check"
         },
         {
-            project_name:"fa-regular fa-calendar-check",
+            project_name:"Web portfolio",
             company_name:"School project",
             icon:"fa-solid fa-image"
         },

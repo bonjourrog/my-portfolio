@@ -18,10 +18,10 @@ export interface SocialNetwork{
 }
 
 export interface Experience{
-    occupation_name: string;
     company_name: string;
     time_worked: number;
     years_or_moths: string;
+    date: string;
 }
 
 export interface Project{
