@@ -5,7 +5,7 @@ export const UserInfoMock: UserInfo = {
     name: "Rogelio Beltrán",
     description: [
         {
-            name:"Work both front-end and back-end technologies focus on web development",
+            name:"Front-end developer",
             icon: "💻"
         },
         {
@@ -21,7 +21,8 @@ export const UserInfoMock: UserInfo = {
             icon:"👍"
         }
     ],
-    image: "https://www.pngarts.com/files/5/Full-Body-Justin-Bieber-PNG-Photo.png",
+    // image: "https://www.pngarts.com/files/5/Full-Body-Justin-Bieber-PNG-Photo.png",
+    image:'https://res.cloudinary.com/dcezb5utw/image/upload/v1665634363/porfolio/PhotoRoom_20220428_155552_tdtwqm.jpg',
     social_networks:[
         {
             icon:"fa-brands fa-github",
